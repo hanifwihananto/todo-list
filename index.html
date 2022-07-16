@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    
+    <!-- Icon -->
+    <link rel="icon" href="src/img/logo.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/style.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0b20dfeace.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Start -->
+    <header>
+        <h1>ToDo List</h1>
+        <form id="newTodoForm">
+            <input type="text" id="newTodoInput" placeholder="Add ToDo">
+            <button class="add" type="submit">
+                <i class="fa-solid fa-square-plus" id="newTodoSubmit"></i>
+            </button>
+        </form>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main>
+        <section class="todo-list-section">
+            <div class="todo-list" id="todoList">
+                
+                <!-- Example Todo -->
+                <!-- <div class="todo" id="todo">
+                    <div class="content">
+                        <input type="text" class="text" id="text" value="Make Ice" readonly>
+                    </div>
+                    <div class="actions">
+                        <span class="edit">
+                            <i class="fa-solid fa-pen"></i>
+                        </span>
+                        <span class="delete">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </span>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <!-- Main End -->
+
+    <!-- Script -->
+    <script src="src/main.js"></script>
+    <script src="src/sweetalert2.all.min.js"></script>
+</body>
+</html>

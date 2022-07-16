@@ -1,0 +1,158 @@
+:root {
+    --primary: #2C3639;
+    --second: #A27B5C;
+    --input: #DCD7C9;
+    --text: #3F4E4F;
+    --edit: #1A4D2E;
+    --delete: #990000;
+    --done:#3F4E4F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary);
+}
+
+header {
+    margin-top: 50px;
+    text-align: center; 
+}
+
+h1 {
+    font-size: 56px;
+    color: var(--second);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+input, button {
+    border: none;
+    outline: none;
+    appearance: none;
+    background: none;
+}
+
+form input {
+    padding: 20px;
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: var(--input);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+form input::placeholder {
+    left: 20px;
+    color: var(--text);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.add {
+    border: none;
+    outline: none;
+    background: none;
+    margin-left: 20px;}
+
+.add i {
+    font-size: 48px;
+    color: var(--second);
+}
+
+.add i:hover {
+    cursor: pointer;
+}
+
+.add i:active {
+    opacity: .7;
+}
+
+main {
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.todo{
+    width: 600px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--second);
+    border-radius: 5px;
+}
+
+.content {
+    flex: 1 1 0%; 
+}
+
+.text {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
+    color: var(--done);
+}
+
+.edit i {
+    font-size: 24px;
+    color: var(--edit);
+    margin: 10px;
+}
+.edit i:hover {cursor: pointer;}
+.edit i:active {opacity: .7;}
+
+.delete i {
+    font-size: 24px;
+    color: var(--delete);
+}
+.delete i:hover {cursor: pointer;}
+.delete i:active {opacity: .7;}
+
+
+/* Mobile */
+@media (max-width: 570px) {
+    h1 {font-size: 40px;}
+
+    form input {
+        width: 250px;
+        height: 30px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    form input::placeholder {font-size: 16px;}
+
+    .add {margin-left: 10px;}
+
+    .add i {font-size: 32px;}
+
+    .todo {
+        width: 350px;
+        height: 35px;
+    }
+
+    .text {font-size: 16px;}
+
+    .edit i, .delete i {font-size: 16px;}
+}
